@@ -39,9 +39,14 @@ $tv_serie = new TvSerie("Titolo", "Lingua", "Iniziata", "Finita", "Episodi", "St
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-
-                        <?php echo $production->getDetails() ?>
-
+                        <?php echo $movie->getDetails() ?>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <?php echo $tv_serie->getDetails() ?>
                     </div>
                 </div>
             </div>

@@ -16,4 +16,13 @@ class Movie extends Production
         $this->running_time = $running_time;
     }
 
+    public function getDetails()
+    {
+        return "
+        <strong>Titolo:</strong> $this->title, <br>
+        <strong>Lingua:</strong> $this->original_language, <br>
+        <strong>Anno di uscita:</strong> $this->published_year, <br>
+        <strong>Durata:</strong> $this->running_time, <br>";
+
+    }
 }

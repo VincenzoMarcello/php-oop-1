@@ -23,4 +23,16 @@ class TvSerie extends Production
         $this->number_of_episodes = $number_of_episodes;
         $this->number_of_seasons = $number_of_seasons;
     }
+
+    public function getDetails()
+    {
+        return "
+        <strong>Titolo:</strong> $this->title, <br>
+        <strong>Lingua:</strong> $this->original_language, <br>
+        <strong>Anno di inizio:</strong> $this->aired_from_year, <br>
+        <strong>Anno di fine:</strong> $this->aired_to_year, <br>
+        <strong>Episodi totali:</strong> $this->number_of_episodes, <br>
+        <strong>Stagioni totali:</strong> $this->number_of_seasons, <br>";
+
+    }
 }
