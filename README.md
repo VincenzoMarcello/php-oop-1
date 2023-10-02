@@ -31,3 +31,4 @@ NB: per gestire correttamente le stampe va gestito correttamente il polimorfismo
 # SVOLGIMENTO
 
 - Parto con il creare una classe Production che contiene tutte le proprietà sia quelle di Movie che di TvSerie
+- Creo altre due classi Movie e TvSerie che erediteranno le proprietà del genitore e avranno proprietà uniche
