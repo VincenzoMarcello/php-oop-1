@@ -8,8 +8,29 @@ class Production
         string $title,
         string $original_language
     ) {
+        $this->setTitle($title);
+        $this->setOgLanguage($original_language);
+    }
+
+    public function setTitle($title)
+    {
+        if (empty($title))
+            return false;
         $this->title = $title;
+    }
+
+    public function setOgLanguage($original_language)
+    {
+        if (empty($original_language))
+            return false;
         $this->original_language = $original_language;
+    }
+
+    public function getDetails()
+    {
+        return "
+        <strong>Titolo:</strong> $this->title, <br>
+        <strong>Lingua:</strong> $this->original_language, <br>";
     }
 }
 
@@ -62,10 +83,28 @@ $movie = new Movie("Titolo", "Lingua", "Anno", "Durata");
 $tv_serie = new TvSerie("Titolo", "Lingua", "Iniziata", "Finita", "Episodi", "Stagioni");
 
 
-var_dump($production->title);
+var_dump($production);
 echo "<hr>";
 var_dump($movie);
 echo "<hr>";
 var_dump($tv_serie);
 
 echo $tv_serie->title;
+var_dump($production->title);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
