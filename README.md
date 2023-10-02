@@ -34,3 +34,5 @@ NB: per gestire correttamente le stampe va gestito correttamente il polimorfismo
 - Creo altre due classi Movie e TvSerie che erediteranno le proprietà del genitore e avranno proprietà uniche
 - Tramite costruttore imposto le classi uniche e le metto insieme a quelle ereditate
 - aggiungo un get e un set per i controlli
+- facciamo un po' di scaffolding mettendo le classi in file diversi
+- creiamo un layout in html
