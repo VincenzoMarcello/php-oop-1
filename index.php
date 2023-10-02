@@ -2,12 +2,18 @@
 class Production
 {
     public $title;
-    public $description;
-    // MOVIE
+    public $original_language;
+}
+
+class Movie extends Production
+{
     public $published_year;
     public $running_time;
 
-    // SERIE
+}
+
+class TvSerie extends Production
+{
     public $aired_from_year;
 
     public $aired_to_year;
@@ -15,5 +21,4 @@ class Production
     public $number_of_episodes;
 
     public $number_of_seasons;
-
 }
